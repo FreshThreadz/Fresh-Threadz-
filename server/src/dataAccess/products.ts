@@ -4,6 +4,7 @@ import * as format from '../Utilities/formatData';
 import * as postgres from '../Utilities/queryStrings'
 import { Transform } from 'stream';
 
+// Modify Products to return page and count
 export async function getProducts (page:string = '1', count:string = '5'):Promise<I.Product[]> {
   const { rows } : { rows:[] } = await connection.query(postgres.getProducts(page, count));
   return rows;

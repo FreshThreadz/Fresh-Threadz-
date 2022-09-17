@@ -25,16 +25,16 @@ function Styles(skus, photos) {
             };
         }
     });
-    skus.length === 0 ? Object.keys(bucket).forEach(style_id => {
-        bucket[style_id]["skus"] = {
-            ["null"]: {
-                "quantity": null,
-                "size": null,
-            }
-        };
-    }) :
-        skus.forEach((sku) => {
-            console.log(sku);
+    skus.length === 0 ?
+        Object.keys(bucket).forEach(style_id => {
+            bucket[style_id]["skus"] = {
+                ["null"]: {
+                    "quantity": null,
+                    "size": null,
+                }
+            };
+        })
+        : skus.forEach((sku) => {
             if (bucket[sku.style_id]["skus"]) {
                 bucket[sku.style_id]["skus"][sku.sku_id] = {
                     "quantity": sku.quantity,

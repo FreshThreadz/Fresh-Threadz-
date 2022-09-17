@@ -27,6 +27,7 @@ exports.getProductRelated = exports.getProductStyles = exports.getProductInfo = 
 const postgres_1 = require("./../database/postgres");
 const format = __importStar(require("../Utilities/formatData"));
 const postgres = __importStar(require("../Utilities/queryStrings"));
+// Modify Products to return page and count
 async function getProducts(page = '1', count = '5') {
     const { rows } = await postgres_1.connection.query(postgres.getProducts(page, count));
     return rows;
