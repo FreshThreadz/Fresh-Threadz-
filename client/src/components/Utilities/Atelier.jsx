@@ -5,19 +5,19 @@ REVIEWS_API = "http://54.196.195.3"
 
 //////////////////////////////////// RR BUCKET
 module.exports.getReviewsByCount = (id, sortBy, displayedReviews, count) =>
-  axios.get(`${REVIEWS_API}/reviews?product_id=${id}&sort=${sortBy}`, {
+  axios.get(`${ATELIER_API}/reviews?product_id=${id}&sort=${sortBy}`, {
     headers: { Authorization: process.env.KEY },
   });
 
 module.exports.postNewReview = (post) => {
-  axios.post(`${REVIEWS_API}/reviews`, post, {
+  axios.post(`${ATELIER_API}/reviews`, post, {
     headers: { Authorization: process.env.KEY },
   });
 };
 
 module.exports.markReviewHelpful = (id) =>
   axios.put(
-    `${REVIEWS_API}/reviews/${id}/helpful`,
+    `${ATELIER_API}/reviews/${id}/helpful`,
     { params: { review_id: id } },
     {
       headers: { Authorization: process.env.KEY },
@@ -26,7 +26,7 @@ module.exports.markReviewHelpful = (id) =>
 
 module.exports.reportReview = (id) =>
   axios.put(
-    `${REVIEWS_API}/reviews/${id}/report`,
+    `${ATELIER_API}/reviews/${id}/report`,
     { params: { review_id: id } },
     {
       headers: { Authorization: process.env.KEY },
@@ -59,7 +59,7 @@ module.exports.postItemtoCart = (sku) =>
   );
 
 module.exports.getReviewMetaData = (id) =>
-  axios.get(`${REVIEWS_API}/reviews/meta?product_id=${id}`, {
+  axios.get(`${ATELIER_API}/reviews/meta?product_id=${id}`, {
     headers: { Authorization: process.env.KEY },
   });
 
