@@ -1,5 +1,5 @@
-![banner](https://user-images.githubusercontent.com/106702313/189493711-fb54aa6b-8eff-4026-9d43-af3b36771d9f.png)
-# Fresh Threadz
+![banner](https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/07/The-Boys-Homelander.jpg)
+# SDC Superman
 
 ### Table of Contents
 1. [General Info](#general-info)
@@ -80,15 +80,10 @@ Product Detail: Ivan Luk\
 [![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luki1/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/theivanluk)
 
-Related Items & Outfits: Kat Gao\
-[![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kat-gao-30a0a1204/)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/katto030)
+Ratings Reviews: Brian Pham\
+[![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/lbrian-phaml/)](https://www.linkedin.com/in/lbrian-phaml/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/brianpham97)](https://github.com/brianpham97)
 
-Questions & Answers: Jessie Zhao\
-[![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jessiezhao8/)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jzthacoder)
-
-
-Ratings & Reviews: Matt Waelder\
-[![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mattwaelder/)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mattwaelder)
+Question & Answers: Allan Viguilla\
+[![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/allan-viguilla-35050a216/)](https://www.linkedin.com/in/allan-viguilla-35050a216/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/allanviguilla)](https://github.com/allanviguilla)

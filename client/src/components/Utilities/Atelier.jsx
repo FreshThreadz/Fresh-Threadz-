@@ -1,27 +1,24 @@
 const axios = require("axios");
+//AWS instances will change after termination...
 
 ATELIER_API = "https://app-hrsei-api.herokuapp.com/api/fec2/rfp";
+REVIEWS_API = "http://54.196.195.3"
 
 //////////////////////////////////// RR BUCKET
 module.exports.getReviewsByCount = (id, sortBy, displayedReviews, count) =>
-  axios.get(`${ATELIER_API}/reviews`, {
-    params: {
-      product_id: `${id}`,
-      sort: `${sortBy}`,
-      count: `${displayedReviews + count}`,
-    },
+  axios.get(`${REVIEWS_API}/reviews?product_id=${id}&sort=${sortBy}`, {
     headers: { Authorization: process.env.KEY },
   });
 
 module.exports.postNewReview = (post) => {
-  axios.post(`${ATELIER_API}/reviews`, post, {
+  axios.post(`${REVIEWS_API}/reviews`, post, {
     headers: { Authorization: process.env.KEY },
   });
 };
 
 module.exports.markReviewHelpful = (id) =>
   axios.put(
-    `${ATELIER_API}/reviews/${id}/helpful`,
+    `${REVIEWS_API}/reviews/${id}/helpful`,
     { params: { review_id: id } },
     {
       headers: { Authorization: process.env.KEY },
@@ -63,7 +60,7 @@ module.exports.postItemtoCart = (sku) =>
   );
 
 module.exports.getReviewMetaData = (id) =>
-  axios.get(`${ATELIER_API}/reviews/meta?product_id=${id}`, {
+  axios.get(`${REVIEWS_API}/reviews/meta?product_id=${id}`, {
     headers: { Authorization: process.env.KEY },
   });
 
