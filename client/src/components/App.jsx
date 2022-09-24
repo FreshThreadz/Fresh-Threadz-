@@ -18,7 +18,7 @@ const reducer = (state, newState) => ({ ...state, ...newState });
 
 
 const initialeState = {
-  id: 65635,
+  id: 25,
   product_info: {},
   product_rating: {},
   product_style: [],
