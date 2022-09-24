@@ -4,9 +4,10 @@
     "watch": true,
     "lib": ["dom", "es2017"],
     "strict": true,
-    "module": "commonjs",
+    "module": "NodeNext",
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./server/dist",
   }
 }

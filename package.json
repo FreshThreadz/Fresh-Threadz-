@@ -9,8 +9,8 @@
     "dev": "npx webpack serve",
     "client-dev": "npx webpack --watch",
     "build-server": "npx tsc",
-    "start": "node server/index.js",
-    "server-dev": "concurrently \"npx tsc --watch\" \"nodemon -q server/index.js\""
+    "start": "node server/dist/index.js",
+    "server-dev": "concurrently \"npx tsc --watch\" \"nodemon -q server/dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -41,10 +41,12 @@
     "@hookform/error-message": "^2.0.0",
     "axios": "^0.27.2",
     "bluebird": "^3.7.2",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.0.2",
     "dotenv-webpack": "^8.0.1",
     "express": "^4.18.1",
     "fs": "^0.0.1-security",
+    "pg": "^8.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",

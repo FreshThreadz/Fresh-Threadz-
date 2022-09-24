@@ -7,7 +7,10 @@ import SocialMediaSharing from './SocialMediaSharing.jsx';
 import Atelier from "./../../Utilities/Atelier.jsx";
 
 const truncatePrice = (price) => {
-  return price.slice(price.length - 3, price.length) === '.00' ? price.slice(0, price.length - 3) : price
+  if (typeof price === 'string') {
+    return price.slice(price.length - 3, price.length) === '.00' ? price.slice(0, price.length - 3) : price
+  }
+  return String(price);
 }
 
 const ProductDetails = (props) => {
