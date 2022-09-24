@@ -4,6 +4,7 @@ const axios = require("axios");
 ATELIER_API = "https://app-hrsei-api.herokuapp.com/api/fec2/rfp";
 REVIEWS_API = "http://54.196.195.3"
 PRODUCTS_API = "http://54.183.160.226"
+QA_API = "http://35.93.20.115";
 
 //////////////////////////////////// RR BUCKET
 module.exports.getReviewsByCount = (id, sortBy, displayedReviews, count) =>
@@ -75,86 +76,86 @@ module.exports.postUserClick = (element, widget) =>
 ////////////////////////////////////////////////////////////////////////////////
 
 module.exports.getQuestions = (id) =>
-  axios.get(`${ATELIER_API}/qa/questions/?product_id=${id}&count=50`, {
+  axios.get(`${QA_API}/qa/questions/?product_id=${id}&count=50`, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.getAnswers = (question_id) =>
-  axios.get(`${ATELIER_API}/qa/questions/${question_id}/answers`, {
+  axios.get(`${QA_API}/qa/questions/${question_id}/answers`, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.postQuestion = (product_id, modalData) =>
-  axios.post(`${ATELIER_API}/qa/questions`, modalData, {
+  axios.post(`${QA_API}/qa/questions`, modalData, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.postAnswer = (product_id, question_id, modalData) =>
-  axios.post(`${ATELIER_API}/qa/questions/${question_id}/answers`, modalData, {
+  axios.post(`${QA_API}/qa/questions/${question_id}/answers`, modalData, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.markQuestionAsHelpful = (question_id, product_id) =>
   axios.put(
-    `${ATELIER_API}/qa/questions/${question_id}/helpful`,
+    `${QA_API}/qa/questions/${question_id}/helpful`,
     { question_id: question_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.markAnswerAsHelpful = (answer_id) =>
   axios.put(
-    `${ATELIER_API}/qa/answers/${answer_id}/helpful`,
+    `${QA_API}/qa/answers/${answer_id}/helpful`,
     { answer_id: answer_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.getAnswer = (question_id) =>
-  axios.get(`${ATELIER_API}/qa/questions/${question_id}/answers`, {
+  axios.get(`${QA_API}/qa/questions/${question_id}/answers`, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.reportAnswer = (answer_id) =>
   axios.put(
-    `${ATELIER_API}/qa/answers/${answer_id}/report`,
+    `${QA_API}/qa/answers/${answer_id}/report`,
     { answer_id: answer_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.reportQuestion = (question_id) =>
   axios.put(
-    `${ATELIER_API}/qa/questions/${question_id}/report`,
+    `${QA_API}/qa/questions/${question_id}/report`,
     { question_id: question_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.getAnswers = (question_id) =>
-  axios.get(`${ATELIER_API}/qa/questions/${question_id}/answers`, {
+  axios.get(`${QA_API}/qa/questions/${question_id}/answers`, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.postQuestion = (product_id, modalData) =>
-  axios.post(`${ATELIER_API}/qa/questions`, modalData, {
+  axios.post(`${QA_API}/qa/questions`, modalData, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.postAnswer = (product_id, question_id, modalData) =>
-  axios.post(`${ATELIER_API}/qa/questions/${question_id}/answers`, modalData, {
+  axios.post(`${QA_API}/qa/questions/${question_id}/answers`, modalData, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.markQuestionAsHelpful = (question_id, product_id) =>
   axios.put(
-    `${ATELIER_API}/qa/questions/${question_id}/helpful`,
+    `${QA_API}/qa/questions/${question_id}/helpful`,
     { question_id: question_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.markAnswerAsHelpful = (answer_id) =>
   axios.put(
-    `${ATELIER_API}/qa/answers/${answer_id}/helpful`,
+    `${QA_API}/qa/answers/${answer_id}/helpful`,
     { answer_id: answer_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.getAnswer = (question_id) =>
-  axios.get(`${ATELIER_API}/qa/questions/${question_id}/answers`, {
+  axios.get(`${QA_API}/qa/questions/${question_id}/answers`, {
     headers: { Authorization: process.env.KEY },
   });
 module.exports.reportAnswer = (answer_id) =>
   axios.put(
-    `${ATELIER_API}/qa/answers/${answer_id}/report`,
+    `${QA_API}/qa/answers/${answer_id}/report`,
     { answer_id: answer_id },
     { headers: { Authorization: process.env.KEY } }
   );
 module.exports.reportQuestion = (question_id) =>
   axios.put(
-    `${ATELIER_API}/qa/questions/${question_id}/report`,
+    `${QA_API}/qa/questions/${question_id}/report`,
     { question_id: question_id },
     { headers: { Authorization: process.env.KEY } }
   );
